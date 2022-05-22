@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/bmi"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:text="@string/txt_tv1"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txt_weight"
+        android:layout_margin="20dp"
+        android:background="#008ace"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:hint="@string/hint_et1"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:text="@string/txt_tv2"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txt_height"
+        android:layout_margin="20dp"
+        android:background="#008ace"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:hint="@string/hint_et2"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_bmi"
+            android:text="@string/btn_bmi"
+            android:layout_width="300dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:text="@string/btn_res"
+            android:layout_width="300dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_margin="20dp"
+        android:background="#008ace"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:textSize="17sp"
+        android:hint="@string/dot"
+        android:layout_height="70dp" />
+</LinearLayout>
